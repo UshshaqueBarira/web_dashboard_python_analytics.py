@@ -11,13 +11,7 @@ st.title(":bar_chart: Sample SuperStore EDA")
 st.markdown('<style>div.block-container{padding-top:1rem;}</style', unsafe_allow_html=True)
 
 fl=st.file_uploader(":file_folder:Upload a file",type=(["csv","txt","xlx","xls"]))
-if fl is not None:
-    filename=fl.name
-    st.write(filename)
-    df=pd.read_csv(filename)
-else:
-    os.chdir(r"D:\pycharm\Dashboard_2")
-    df=pd.read_csv("Superstore.csv")
+
 df=pd.read_csv("https://github.com/UshshaqueBarira/web_dashboard_python_analytics.py/blob/main/Superstore.csv")
 
 col1, col2= st.columns((2))
