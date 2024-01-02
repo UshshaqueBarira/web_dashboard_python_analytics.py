@@ -16,7 +16,8 @@ if fl is not None:
     st.write(filename)
     df=pd.read_csv(filename)
 else:
-    os.chdir(r"D:\pycharm\Dashboard_2")
+    #os.chdir(r"D:\pycharm\Dashboard_2")
+    os.chdir("https://github.com/UshshaqueBarira/web_dashboard_python_analytics.py/blob/main/Superstore.csv")
     df=pd.read_csv("Superstore.csv")
 
 col1, col2= st.columns((2))
