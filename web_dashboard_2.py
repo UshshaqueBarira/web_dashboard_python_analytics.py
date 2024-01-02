@@ -17,8 +17,8 @@ if fl is not None:
     df=pd.read_csv(filename)
 else:
     #os.chdir(r"D:\pycharm\Dashboard_2")
-    os.chdir("https://github.com/UshshaqueBarira/web_dashboard_python_analytics.py/blob/main/Superstore.csv")
-    df=pd.read_csv("Superstore.csv")
+    #os.chdir("https://github.com/UshshaqueBarira/web_dashboard_python_analytics.py/blob/main/Superstore.csv")
+    df=pd.read_csv("https://github.com/UshshaqueBarira/web_dashboard_python_analytics.py/blob/main/Superstore.csv")
 
 col1, col2= st.columns((2))
 df["Order Date"]=pd.to_datetime(df['Order Date'],format='mixed')
